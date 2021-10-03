@@ -10,96 +10,63 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="m-4 text-gray-700">
+  <body class="bg-blue-100">
+    <div class="m-4 text-gray-700 font-mono">
       <header>
         <h1 id="top" class="text-3xl font-bold m-5 text-center">
           Alexander Kaiser
         </h1>
         <nav>
-          <div class="">
-            <ul role="list">
-              <div
-                class="
-                  text-center
-                  grid grid-cols-2
-                  gap-2
-                  text-gray-200
-                  antialiased
-                  font-bold
-                  text-lg
-                "
-              >
-                <div class="bg-blue-700 hover:bg-blue-500">
-                  <a href="#contact"
-                    ><li class="p-3 border border-gray-200">Contact</li></a
-                  >
-                </div>
-                <div class="bg-blue-700 hover:bg-blue-500">
-                  <a href="#biography"
-                    ><li class="p-3 border border-gray-200">Biography</li></a
-                  >
-                </div>
+          <ul role="list">
+            <div
+              class="
+                text-center
+                grid grid-cols-2
+                gap-2
+                text-gray-200
+                antialiased
+                font-bold
+                text-lg
+              "
+            >
+              <div class="bg-blue-700 hover:bg-blue-500 rounded-xl">
+                <a href="#biography"><li class="p-3">Biography</li></a>
               </div>
-            </ul>
-          </div>
+              <div class="bg-blue-700 hover:bg-blue-500 rounded-xl">
+                <a href="#contact"><li class="p-3">Contact</li></a>
+              </div>
+            </div>
+          </ul>
         </nav>
       </header>
       <main>
         <img
           src="images/alexander.jpeg"
           alt="Alexander Kaiser"
-          class="mx-auto my-4 w-72"
+          class="mx-auto my-4 w-72 rounded-xl"
         />
         <div class="m-4">
           <h2 id="aboutme" class="text-2xl font-bold text-center">About me</h2>
           <p>
-            My name is Alexander Kaiser. I am 24 yours old and live in
+            My name is Alexander Kaiser. I am 24 years old and live in
             Wippingen, Lower Saxony. At the moment I am participating in a web
             development bootcamp.
           </p>
           <h3 class="text-xl font-bold">Hobbies</h3>
-          <ul>
+          <ul role="list" class="list-disc list-inside">
             <li>Football</li>
             <li>Wrestling</li>
             <li>Music</li>
             <li>Tattoo</li>
           </ul>
         </div>
-        <div class="m-4">
-          <h2 id="contact" class="text-2xl font-bold text-center">Contact</h2>
 
-          <div class="grid grid-cols-5 m-2 gap-3">
-            <a href="tel:+4915161475196"
-              ><img src="images/phone.png" class="w-12"
-            /></a>
-
-            <a href="mailto:alexander.kaiser1996@web.de"
-              ><img src="images/email.png" class="w-12"
-            /></a>
-
-            <a href="https://www.github.com/alkawi"
-              ><img src="images/github-icon.png" alt="Github icon" class="w-12"
-            /></a>
-
-            <a href="https://www.xing.com/profile/Alexander_Kaiser150"
-              ><img src="images/xing-icon.png" alt="XING icon" class="w-12"
-            /></a>
-
-            <a href="https://www.linkedin.com/in/alexander-kaiser-3b82131a5"
-              ><img
-                src="images/linkedin-icon.png"
-                alt="LinkedIn icon"
-                class="w-12"
-            /></a>
-          </div>
-        </div>
         <div class="m-4">
           <h2 id="biography" class="text-2xl font-bold text-center">
             Biography
           </h2>
           <h3 class="text-xl font-bold">Work experience</h3>
-          <table>
+          <table class="table-fixed">
             <th>Time</th>
             <th>Company</th>
             <th>Job title</th>
@@ -161,8 +128,38 @@
             </tr>
           </table>
         </div>
+        <div class="m-4">
+          <h2 id="contact" class="text-2xl font-bold text-center">Contact</h2>
+
+          <div class="grid grid-cols-5 m-2 gap-3">
+            <a href="tel:+4915161475196"
+              ><img src="images/phone.png" class="w-12"
+            /></a>
+
+            <a href="mailto:alexander.kaiser1996@web.de"
+              ><img src="images/email.png" class="w-12"
+            /></a>
+
+            <a href="https://www.github.com/alkawi"
+              ><img src="images/github-icon.png" alt="Github icon" class="w-12"
+            /></a>
+
+            <a href="https://www.xing.com/profile/Alexander_Kaiser150"
+              ><img src="images/xing-icon.png" alt="XING icon" class="w-12"
+            /></a>
+
+            <a href="https://www.linkedin.com/in/alexander-kaiser-3b82131a5"
+              ><img
+                src="images/linkedin-icon.png"
+                alt="LinkedIn icon"
+                class="w-12"
+            /></a>
+          </div>
+        </div>
       </main>
-      <a href="#top">Jump to top</a>
+      <div class="-right w-7 sticky">
+        <a href="#top"><img src="images/chevron-upwards-arrow.png" /></a>
+      </div>
     </div>
   </body>
 </html>
